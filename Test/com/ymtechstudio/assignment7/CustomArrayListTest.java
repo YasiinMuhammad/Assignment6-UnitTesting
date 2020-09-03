@@ -46,7 +46,14 @@ class CustomArrayListTest {
 		myCustomList.add(5, 10);
 
 		assertEquals(10, myCustomList.get(5));
+		assertEquals(100, myCustomList.getSize());
+	}
+	
+	@Test
+	void test_sould_add_to_front_of_List() {
+		myCustomList.add(0, 1676);
 
+		assertEquals(1676, myCustomList.get(0));
 	}
 
 	@Test
